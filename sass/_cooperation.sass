@@ -1,0 +1,46 @@
+.cowork_box
+    width: 900px
+    +flex(column,wrap,center,center)
+    margin: 0 auto
+
+.cowork_content
+    width: 100%
+    display: inline-block
+    text-align: center
+
+    p
+        +content--xl
+        margin: 0 0 20px 0
+        line-height: 1.75
+
+.list_box
+    width: 100%
+    margin: 20px 0
+
+.list_content
+    border: 3px solid $color-secondary1
+    border-radius: 10px
+    width: 100%
+    padding: 40px 60px
+
+.list_item
+    +content--xl
+    margin: 20px 0
+
+@media ( max-width: 992px)
+    .cowork_box
+        width: 90vw
+        margin-left: 5vw
+
+    .cowork_content
+
+        p
+            margin: 12px 0
+
+    .list_box
+        margin: 0 0 20px 0
+
+    .list_content
+        padding: 25px 40px
+
+// @media (max-width: 710px)

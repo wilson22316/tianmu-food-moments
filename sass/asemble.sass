@@ -1,0 +1,183 @@
+@import variable
+@import reset
+
+@import header
+@import footer
+
+// 首頁
+@import index
+// 美食之家
+@import list
+// 關於我們
+@import about
+// 單獨商家資訊
+@import restaurant
+
+@import cooperation
+
+*
+  box-sizing: border-box
+
+body
+  font-family: "源泉圓體","italic"
+  font-weight: 700
+  background-color: $color-primary1
+  font-size: 1rem
+
+a
+  &:link, &:visited,&:hover
+    text-decoration: none
+
+.main
+  margin-top: 120px
+
+  &--secondary
+    margin-top: 80px
+
+.topic
+  +title--xl
+  text-align: center
+  margin: 1.25rem 0 2rem 0
+
+/* 常駐按鈕
+.circle_opacity--5
+  position: fixed
+  border-radius: 50%
+  width: 40px
+  height: 40px
+  background: #fff
+  background: rgba(255,249,241,0.5)
+  +flex(row,wrap,center,center)
+  z-index: 9
+  cursor: pointer
+
+.love, .back-to-top
+  color: $color-secondary1
+  &:hover
+    color: $color-secondary1
+
+.love
+  margin-top: 5px
+
+.icon_always--1
+  right: 25px
+  bottom: 85px
+
+.icon_always--2
+  right: 25px
+  bottom: 30px
+
+.icon_bottom--1
+  font-size: 28px
+
+.icon_bottom--2
+  font-size: 32px
+/* 收藏列表
+.offcanvas-header
+  background: $color-primary3
+
+#offcanvasWithBackdrop
+  overflow-y: scroll
+
+#offcanvasWithBackdropLabel
+  +title--sm
+  color: $color-primary1
+
+.collect
+  +content--xl
+  font-size: 18px
+  +flex(column,wrap,center,center)
+
+  p
+    +content--xl
+    margin-top: 5px
+
+.favorite_item
+  text-align: center
+  margin-bottom: 30px
+
+  &:hover
+    transform: scale(1.025)
+    transition: .5s
+
+/* 樣式
+.img--md
+  width: 300px
+  height: 200px
+  border-radius: 5px
+
+.icon
+  &--xl
+    font-size: 1.75rem
+  &--lg
+    font-size: 1.25rem
+    margin-right: 5px
+  &--md
+    font-size: 1rem
+
+.star,.dollar,.distance
+  font-size: 1rem
+  color: #ffce22
+  line-height: 25px
+
+  &--none
+    color: $color-primary2
+
+.dollar,.distance
+  font-size: 20px
+
+.hide--pc
+  display: none
+
+/* =========================================
+/* RWD
+@media (max-width: 992px)
+  html
+    font-size: 0.85rem
+
+  .main
+    margin-top: 6rem
+
+    &--secondary
+      margin-top: 50px
+
+  .topic
+    font-size: 22px
+
+  .star
+    font-size: 16px
+
+  .hide--mb
+    display: none
+
+  .hide--pc
+    display: inline-block
+
+@media (max-width: 499px)
+  html
+    font-size: .75rem
+
+  .topic
+    margin-bottom: .5rem
+
+  /* 常駐按鈕
+  .circle_opacity--5
+    width: 35px
+    height: 35px
+
+  .love
+    margin-top: 2px
+
+  .icon_always--1
+    right: 20px
+    bottom: 67px
+
+  .icon_always--2
+    right: 20px
+    bottom: 20px
+
+  .icon_bottom--1
+    font-size: 25px
+
+  .icon_bottom--2
+    font-size: 28px

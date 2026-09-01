@@ -1,0 +1,42 @@
+/* footer
+.footer
+  +title--sm
+  background: $color-primary4
+  color: #fff
+  padding: 0 0.5rem 0.5rem 0.5rem
+  text-align: center
+  width: 100vw
+  height: 170px
+  margin-top: 30px
+  +flex(column,wrap,center,center)
+  p
+    margin-top: .75rem
+
+  &--index
+    margin-top: 0
+
+.footer_link
+  display: inline-flex
+
+  p
+    line-height: 1.25rem
+    padding: 0 10px
+
+  a
+    color: #fff
+
+.vertical_line
+  border-left: 1px solid #fff
+  border-right: 1px solid #fff
+
+@media (max-width: 992px)
+  .footer
+    margin-top: 8px
+
+    &--index
+      margin-top: 0
+
+@media (max-width: 499px)
+  .footer
+    height: 120px
+    margin-top: 0

@@ -1,0 +1,117 @@
+
+/* header
+.header
+  // width: 100vw
+
+.header_logo
+  width: 150px
+  // height: 50px
+
+.nav
+  background: $color-secondary1
+  +flex(row,wrap,space-between,center)
+  width: 100vw
+  height: 80px
+  padding: 5px 30px
+  position: fixed
+  top: 0
+  z-index: 10
+
+  &_lists
+    +flex(row,wrap,center,center)
+
+  &_item
+    // width: 100px
+    height: 20px
+
+    .eng
+      color: #b7a99b
+      font-size: 15px
+
+  &_link
+    +title--sm
+    letter-spacing: 2px
+    margin: 0 1rem
+    cursor: pointer
+    text-decoration: none
+
+    &:hover
+      color: $color-primary1
+
+#burger
+  display: none
+
+.checkbtn
+  font-size: 30px
+  color: $color-primary4
+  display: none
+
+@media (max-width: 992px)
+  .header
+    position: fixed
+    width: 100vw
+    top: 0
+    left: 0
+    z-index: 10
+
+    &_logo
+      width: 120px
+      // height: 40px
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+
+  .nav
+    height: 50px
+    width: 100vw
+
+    &_lists
+      position: fixed
+      width: 100vw
+      height: 100vh
+      background: #f7ecd7
+      background: rgba(247, 236, 215,.95)
+      top: 0vh
+      left: 100vw
+      overflow: hidden
+      text-align: center
+      transition: .5s
+      z-index: 10
+      display: inline-flex
+      +flex(column,wrap,flex-start,flex-start)
+
+    &_item
+      width: 280px
+      text-align: left
+      margin: 0 auto
+      margin-top: 50px
+      border: 0
+
+      &--first
+        margin-top: 80px
+
+    &_link
+      margin: 0
+      font-size: 20px
+
+      &:hover
+        color: $color-primary4
+
+  .open
+    top: 0
+    left: 0
+    height: 100vh
+
+  .checkbtn,.closebtn
+    font-size: 25px
+    position: absolute
+    right: 7%
+    display: block
+    cursor: pointer
+
+  .closebtn
+    top: 0
+    margin-top: 30px
+    transform: translate(-12.5%,-50%)
+    color: $color-primary4

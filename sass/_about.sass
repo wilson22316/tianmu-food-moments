@@ -1,0 +1,209 @@
+.about_content_box,.about_content_box--members
+    width: 1200px
+    height: 400px
+    background: $color-primary3
+    +flex(row,wrap,center,center)
+    margin: 50px auto
+    border-radius: 5px
+
+    &:hover
+        box-shadow: 0px 0px 10px #d5aa88
+        transform: scale(calc( 100% + 1% ))
+        transition: .5s
+
+    &--members
+        margin: 0
+        height: 400px
+        position: relative
+
+.img--story,.img--idea,.img--team
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(../image/story.jpeg)
+    background-size: cover
+            // background-attachment: fixed
+    background-position: center center
+    background-repeat: no-repeat
+    border-radius: 5px 0 0 5px
+
+.img--idea
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(../image/idea.jpeg)
+
+.img--team
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(../image/team.jpeg)
+    background-attachment: fixed
+    border-radius: 5px
+
+.title--about,.content--about
+    width: 50%
+    height: 100%
+    +flex(column,wrap,center,center)
+
+.content--about
+    align-items: flex-start
+    padding: 0 50px
+
+.about_title
+    +title--xl
+    color: #fff
+
+    &--en
+        +title--md
+        color: #fff
+
+.about_content
+    +content--xl
+    color: #fff
+    line-height: 2
+    margin: 10px 0
+
+.angle--box
+    font-size: 40px
+    color: #fff
+    position: absolute
+    top: 100%
+    transform: translateY(-110%)
+
+.angle-double-down
+    cursor: pointer
+
+.rotate--1
+    transform: rotate(180deg)
+    transition: .5s
+
+.rotate--2
+    transition: .5s
+
+#about_content_box--members
+    width: 1200px
+    position: relative
+    margin: 100px auto 80px
+
+.member_box
+    top: 0
+    width: 100%
+    height: auto
+    max-height: 0
+    overflow: hidden
+    transition: .3s
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+
+    &--open
+        max-height: 100%
+
+.person_inf
+    +flex(column,wrap,flex-start,center)
+    width: 100%
+    background: $color-primary3
+    padding: 20px
+    border-radius: 5px
+
+    &--center
+        border-left: 2px solid #fff
+        border-right: 2px solid #fff
+
+    .member_imgbox
+        width: 200px
+        height: 200px
+        margin-bottom: 10px
+
+        img
+            border-radius: 50%
+            width: 100%
+            height: 100%
+
+    ul
+        margin-top: 10px
+        text-align: center
+        padding-top: 10px
+        border-top: 2px dashed #000
+        width: 90%
+
+    &--name
+        +title--md
+        color: #fff
+        line-height: 1.25
+        text-align: center
+
+    &--work
+        +content--xl
+        color: #fff
+        line-height: 2
+
+#critical_box--about
+    width: 1000px
+    height: 300px
+    font-size: 1.25rem
+
+@media (max-width: 1200px)
+    .contain_box
+        width: 92vw
+        margin-left: 4vw
+
+    .about_content_box
+        width: 100%
+        height: auto
+        flex-direction: column
+        margin-top: 25px
+        margin-bottom: 25px
+
+    .about_content_box--members,#about_content_box--members
+        width: 100%
+        // height: 300px
+
+    #about_content_box--members
+        margin: 35px 0
+
+    .img--story,.img--idea,.content--about,.img--team
+        width: 100%
+        height: 200px
+
+    .img--story,.img--idea,.content--about
+        border-radius: 5px 5px 0 0
+    // .img--team
+    //     height: 300px
+
+    .content--about
+        height: auto
+        padding: 15px
+
+    .about_content
+        margin: 5px 0
+        line-height: 1.5
+
+    .member_box
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(3,1fr)
+        justify-items: center
+
+    .person_inf
+        padding: 10px
+        z-index: 0
+        display: grid
+        grid-template-columns: 1fr 2fr 3fr
+
+        &--center
+            border-left: 0
+            border-right: 0
+            border-top: 2px solid #fff
+            border-bottom: 2px solid #fff
+
+        .member_imgbox
+            width: 100px
+            height: 100px
+            margin-bottom: 0
+
+        ul
+            margin-top: 0
+            padding-top: 0
+            border-top: 0
+            text-align: left
+
+        &--work
+            line-height: 1.5
+
+    #critical_box--about
+        width: 90%
+
+@media (max-width: 499px)
+    #critical_box--about
+        height: 200px

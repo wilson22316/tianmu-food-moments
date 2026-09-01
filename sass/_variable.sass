@@ -1,0 +1,32 @@
+$color-primary1: #fff9f1
+$color-primary2: #f7ecd7
+$color-primary3: #d5aa88
+$color-primary4: #95897d
+
+$color-secondary1: #ecdcbe
+$color-secondary2: #f0a28f
+
+@mixin title--xl
+    font-size: 1.75rem
+    font-weight: 600
+    letter-spacing: 2px
+    color: $color-primary4
+@mixin title--md
+    font-size: 1.5rem
+    color: $color-primary4
+@mixin title--sm
+    font-size: 1.25rem
+    color: $color-primary4
+
+@mixin content--xl
+    font-size: 1.25rem
+    color: $color-primary3
+@mixin content--md
+    font-size: 1rem
+    color: $color-primary3
+
+@mixin flex($flex-direction,$wrap,$justify-content,$align-items)
+    display: flex
+    flex-flow: $flex-direction $wrap
+    justify-content: $justify-content
+    align-items: $align-items

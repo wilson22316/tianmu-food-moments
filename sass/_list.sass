@@ -1,0 +1,248 @@
+/* 排序、隨機
+.sequence
+  +content--md
+  // color: $color-primary4
+  width: 80vw
+  margin-left: 10vw
+  text-align: center
+  +flex(row,wrap,center,center)
+
+  &span
+    margin: 0 3px
+    vertical-align: middle
+
+.catagory
+  +flex(row,wrap,center,center)
+  display: inline-flex
+  margin-right: 5px
+  // vertical-align: middle
+
+.catagory_content
+  font-size: 16px
+  height: 16px
+  margin-right: 3px
+
+.total
+  margin-top: 20px
+  text-align: center
+  color: $color-primary3
+
+.sort
+  +title--md
+
+select
+  appearance: none
+  -moz-appearance: none
+  -webkit-appearance: none
+  background: url("../image/expand.svg") no-repeat scroll right center
+  color: #fff
+  background-color: $color-primary3
+  padding: 3px
+  font-size: 1rem
+  width: 150px
+  border-radius: 5px
+  margin-left: 10px
+
+.modal-title
+  font-size: 1.25rem
+  color: $color-primary4
+
+.pop
+  margin: 0 auto
+
+.random_item
+  margin: 30px 0 20px 0
+  text-align: center
+
+.random_text
+  +title--md
+  margin-top: 10px
+
+/* 美食列表-店家卡片
+.restaurant_all
+  width: 90vw
+  margin-left: 5vw
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  justify-items: center
+
+.restaurant
+  background: #fff
+  width: 320px
+  border-radius: 10px
+  text-align: center
+  margin: 30px 20px
+  position: relative
+
+  &_name
+    +title--md
+    margin: .75rem 0 .5rem 0
+
+  &:hover
+    box-shadow: 0px 0px 10px #d5aa88
+    transform: scale(calc( 100% + 2% ))
+    transition: .5s
+
+.food_photo
+  width: 320px
+  height: 240px
+  border-radius: 10px 10px 0 0
+
+.heart--restaurant
+  display: inline-block
+  width: 28px
+  height: 28px
+  position: absolute
+  font-size: 28px
+  color: #fff
+  top: 205px
+  right: 10px
+
+.heart_change2
+  color: $color-secondary2 !important
+  display: none
+
+.show
+  display: block
+
+.hide
+  display: none
+
+.title
+  width: 150px
+  height: 25px
+  +content--md
+  margin-top: .5rem
+  display: grid
+  grid-template-columns: 50px repeat(5,1fr)
+  text-align: center
+
+  span
+    // line-height: 25px
+    padding-top: 5px
+
+.content
+  +content--md
+  margin: 1.75rem 0 .5rem 0
+  p
+    margin-bottom: 8px
+
+.pc_reverse
+  +flex(column,wrap,center,center)
+
+@media (min-width: 1700px)
+  .restaurant_all
+    grid-template-columns: repeat(4, 1fr)
+
+@media (max-width: 1200px)
+  .restaurant_all
+    grid-template-columns: repeat(2, 1fr)
+
+@media (max-width: 992px)
+  .sequence
+    width: 100vw
+    margin-left: 0
+
+  .sort
+    text-align: center
+    margin-bottom: 10px
+
+  .total
+    margin: 12px 0
+
+  .restaurant_all
+    width: 100vw
+    margin-left: 0
+    margin-bottom: 20px
+
+  .restaurant
+    height: 140px
+    width: 395px
+    border-radius: 5px
+    padding: 10px 0px 10px 10px
+    margin: 3px 0
+    box-shadow: none
+    vertical-align: middle
+
+    &_inf
+      width: calc(100% - 170px)
+      margin-left: 10px
+      text-align: left
+      vertical-align: middle
+
+    &_name
+      font-size: 18px
+      margin: 0
+
+    &:hover
+      box-shadow: none
+      transform: scale(1)
+      background: #968a7e17
+
+    &:active
+
+  .mb_flex
+    +flex(row,wrap,flex-start,center)
+
+  .title
+    grid-template-columns: repeat(5,22px)
+    font-size: 12px
+    margin-top: 12px
+
+  .content
+    margin-top: 0
+    margin-bottom: 0
+    font-size: 12px
+    p
+      margin-top: 12px
+      margin-bottom: 0
+
+  .food_photo
+    width: 160px
+    height: 120px
+    border-radius: 0
+
+  .pc_reverse
+    flex-direction: column-reverse
+    align-items: flex-start
+
+  .heart--restaurant
+    font-size: 25px
+    width: 25px
+    height: 25px
+    top: 100px
+    left: 140px
+
+@media (max-width: 768px)
+  .restaurant_all
+    grid-template-columns: 1fr
+
+  .restaurant
+    width: 480px
+
+@media (max-width: 499px)
+  .sequence
+    margin-top: 16px
+
+  select
+    font-size: 14px
+    width: 120px
+
+  .catagory
+    +flex(row,wrap,center,center)
+    display: inline-flex
+    // vertical-align: middle
+
+  .catagory_content
+    font-size: 14px
+    height: 14px
+    margin-right: 3px
+
+  .restaurant_all
+    // height: auto
+
+  .restaurant
+    width: 98%
+
+  .heart--restaurant
+    font-size: 25px

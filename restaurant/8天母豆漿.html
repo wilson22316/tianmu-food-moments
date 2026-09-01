@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>天母豆漿</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/asemble.css">
+</head>
+
+<body>
+  <!-- 頁首 -->
+  <header class="header"></header>
+
+  <!-- 隨機選取 -->
+  <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true"></div>
+
+  <div class="main--secondary">
+    <!-- 輪播圖 -->
+    <div class="main_content"></div>
+
+    <!-- 店家名稱 -->
+    <div class="restaurant_name--single"></div>
+
+    <!-- 資訊部分 -->
+    <div class="restaurant_inforBox"></div>
+  </div>
+
+  <!-- 地圖 -->
+  <div class="map_box"></div>
+
+  <!-- 別人的想法 -->
+  <div class="sub_content">
+    <h1 class="subtitle">別人的想法</h1>
+    <div class="critical">
+      <div class="critical_box">
+        <div class="critical_box--others">
+          <div class="critical_box--content">
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+          </div>
+          <p class="horizontal_line"></p>
+          <p class="critical_box--content">
+            🏠大眾交通稍微不便，店內屬明亮，桌上均設有隔板，平日早上8點多，有不少人前來購買早餐。
+            <br>
+            📝菜單主分為燒餅類、蛋餅類、點心類及冷凍類，像是冷凍的蛋餅皮就滿方便，在家隨時可煎。
+            <br><br>
+            🍪高麗菜蛋餅（53元），份量挺大份，蛋餅的麵皮煎的酥脆，嚼起來有彈性帶些許麥香，裡頭餡料為高麗菜、粉絲及紅蘿蔔絲，口味鹹淡適中，搭配辣椒非常棒，。
+            <br><br>
+            🥬韭菜盒（40元），麵皮稍微有些厚度，烙的挺清爽，不會有油膩感，餡料非常飽滿，滿滿的韭菜、粉絲、豆干、蛋，香氣十足。
+            <br><br>
+            🥛豆漿（25元），甜度中等，豆味濃郁，帶有滑順感。
+            <br><br>
+            食物份量足，很容易飽到天靈蓋的早餐，小魚干辣椒適合嗜辣的人們。
+          </p>
+        </div>
+        <div class="critical_box--others">
+          <div class="critical_box--content">
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+          </div>
+          <p class="horizontal_line"></p>
+          <p class="critical_box--content">
+            缺：離捷運站主線公車站頗遠，公交族不太方便：空盤空碗清理速度不快，桌上常常杯盤狼藉一片不是很衛生
+            <br><br>
+            推：小魚乾辣椒 (有小魚乾豆豉加持，超香，吃不吃辣都建議吃幾口，能補足蛋餅沒有的辣味鮮味鹹味)
+            <br><br>
+            起司蛋餅
+            (餅皮不是粉漿型、冷凍餅皮，而是獨具特色的薄燒餅型，外層經過油煎後變得香脆可口，餅體一層疊一層有厚度有嚼勁，再加上內餡的柔軟煎蛋和濃稠起司，口感上繽紛又幸福；不過它並非十全十美，餅皮內層沒有煎透會透出生麵粉味，越放涼越明顯，建議一上來就迅速解決)
+            <br><br>
+            雷：綜合蛋餅 (內餡是冬粉韭菜蛋，這樣的內餡組合很soso，最無法接受的是每夾一塊蛋餅，內餡就分崩離析掉滿盤，用湯匙輔助也幫助不大，食用體驗相當崩潰)
+          </p>
+        </div>
+        <div class="critical_box--others">
+          <div class="critical_box--content">
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+          </div>
+          <p class="horizontal_line"></p>
+          <p class="critical_box--content">
+            終於吃到脆皮蛋餅了！<br>
+            天母豆漿的蛋餅應該算是他們的招牌￼<br>
+            雖然有點略油，但是有脆！<br>
+            牛肉捲餅也是跟蛋餅用一樣的皮，<br>
+            不過更加酥脆！<br>
+            不是走那種厚實餅皮的路線￼。<br>
+            不一樣的口感倒也不錯，￼<br>
+            只是覺得甜麵醬好像略少一點￼～<br>
+            燒餅的印象就比較不深刻了￼。<br>
+            來店的人潮絡繹不絕￼，<br>
+            不過點餐的服務櫃檯人員仍十分有耐心￼。
+          </p>
+        </div>
+        <div class="critical_box--others">
+          <div class="critical_box--content">
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+          </div>
+          <p class="horizontal_line"></p>
+          <p class="critical_box--content">
+            點了鹹豆漿、高麗菜蛋餅、韭菜蛋餅、蘿蔔糕、韭菜盒、小籠包，比較好吃的是高麗菜蛋餅，面皮酥，但我不喜歡面皮有點厚的口感，很大一份，但價錢高，一份53元。韭菜盒的料有冬粉，有點像雪裡紅的口感。蘿蔔糕有蘿蔔的甜味還不錯。
+            <br><br>
+            小抱怨，1、內用的醬料碟只有小籠包有附，但如果你去要他也會給，但好像很怕別人裝醬料一樣？（明明價位都比一般豆漿店高）辣椒也是統一由廚房給。2、早上天母33度，內用非、常、熱、喝了鹹豆漿熱到噴汗，快吃完店裡人很多！老闆才不太情願的開冷氣。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="subtitle">你的想法</h1>
+    <textarea name="" id="" class="critical_box--self"></textarea><br>
+    <button class="button submit">
+      <p class="btn_text">送出</p>
+    </button>
+  </div>
+
+  <!-- 提醒 -->
+  <div class="mask"></div>
+
+  <!-- 常駐按鈕 -->
+  <div class="bottom_button"></div>
+
+  <!-- 頁尾 -->
+  <footer class="footer"></footer>
+
+  <!-- js引入區 -->
+  <script src="../js/header&footer.js"></script>
+  <script src="../js/card&sort.js"></script>
+  <script src="../js/restaurant.js"></script>
+  <script src="../js/random_box&bottom_button.js"></script>
+  <script type="text/javascript" src="../js/collect&random.js"></script>
+  <script src="../js/textarea.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>吃越香美食館</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/asemble.css">
+</head>
+
+<body>
+  <!-- 頁首 -->
+  <header class="header"></header>
+
+  <!-- 隨機選取 -->
+  <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true"></div>
+
+  <div class="main--secondary">
+    <!-- 輪播圖 -->
+    <div class="main_content"></div>
+
+    <!-- 店家名稱 -->
+    <div class="restaurant_name--single"></div>
+
+    <!-- 資訊部分 -->
+    <div class="restaurant_inforBox"></div>
+  </div>
+
+  <!-- 地圖 -->
+  <div class="map_box"></div>
+
+  <!-- 別人的想法 -->
+  <div class="sub_content">
+    <h1 class="subtitle">別人的想法</h1>
+    <div class="critical">
+      <div class="critical_box">
+        <div class="critical_box--others">
+          <div class="critical_box--content">
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+          </div>
+          <p class="horizontal_line"></p>
+          <p class="critical_box--content">
+            1.涼拌木瓜絲偏辣
+            喜歡吃酸的你不要錯過桌上附的一罐檸檬
+            讓你加好加滿🤪酸酸辣辣超棒，木瓜絲本身咬起來脆有厚度，好吃！<br>
+            2.生菜捲肉跟菜的比例很剛好，醬汁的魚露不會太重，沾著吃還不錯<br>
+            3.炸春捲酥脆外皮內餡也很值得一吃，不過油了一點，搭配生菜清爽多了或者建議趁熱可以拿紙巾吸油一下<br>
+            4.豬肉炒雞蛋麵味道很好！意外點了一份其他店沒吃過的種類～口感比油麵細，但不會爛，吃膩河粉跟飯的人，很值得一試！
+          </p>
+        </div>
+        <div class="critical_box--others">
+          <div class="critical_box--content">
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+          </div>
+          <p class="horizontal_line"></p>
+          <p class="critical_box--content">
+            炒牛肉河粉
+            份量很足，河粉好吃，牛肉片太老且結塊在一起，調味太油太淡
+            加店內提供的醬油提味比較好吃
+            整體有越南異國味～
+          </p>
+        </div>
+        <div class="critical_box--others">
+          <div class="critical_box--content">
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+          </div>
+          <p class="horizontal_line"></p>
+          <p class="critical_box--content">
+            河粉量滿多的，牛肉也很嫩，老闆還會建議使用什麼醬料，好吃。
+          </p>
+        </div>
+        <div class="critical_box--others">
+          <div class="critical_box--content">
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+            <i class="fas fa-star star"></i>
+          </div>
+          <p class="horizontal_line"></p>
+          <p class="critical_box--content">
+            高麗木瓜絲涼拌，<br>
+            小孩鐘情麵雞蛋，<br>
+            越式咖啡伉儷甘，<br>
+            酸辣牛肉我獨讚，<br>
+            天母悠情閒逸漫。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="subtitle">你的想法</h1>
+    <textarea name="" id="" class="critical_box--self"></textarea><br>
+    <button class="button submit">
+      <p class="btn_text">送出</p>
+    </button>
+  </div>
+
+  <!-- 提醒 -->
+  <div class="mask"></div>
+
+  <!-- 常駐按鈕 -->
+  <div class="bottom_button"></div>
+
+  <!-- 頁尾 -->
+  <footer class="footer"></footer>
+
+  <!-- js引入區 -->
+  <script src="../js/header&footer.js"></script>
+  <script src="../js/card&sort.js"></script>
+  <script src="../js/restaurant.js"></script>
+  <script src="../js/random_box&bottom_button.js"></script>
+  <script type="text/javascript" src="../js/collect&random.js"></script>
+  <script src="../js/textarea.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
